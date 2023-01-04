@@ -1,0 +1,9 @@
+<div class="component">
+    <h2>Matching Book List</h2>
+    <div class="booklistCon" *ngFor="let book of bookList$; let i = index">
+        <div>
+            <a href="#" (click)="sendToDetail(i)">{{book.title}} {{book.author}} {{book.pubDate}}</a>
+        </div>
+        <br>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="component">
+    <h2>Person</h2>
+    <img src={{person$.imageURL}} alt="person">
+    <div class="inputCon">
+        <label for="gender-select" class="form-label">gender:</label>
+        <select name="gender" id="gender-select" [(ngModel)]="person$.gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+    </div>
+    <div class="inputCon">
+        <label for="country-select" class="form-label">country:</label>
+        <select name="country" id="country-select" [(ngModel)]="person$.country">
+            <option value="France">France</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Australia">Australia</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="inputCon">
+        <label for="age-input" class="form-label">age:</label>
+        <input name="age" type="number" min="0" [(ngModel)]="person$.age">
+    </div>
+    <div class="btnCon">
+        <button name="randomPerson" type="button" (click)="getRandomPerson()">Random Person</button>
+    </div>
+    <div class="btnCon">
+        <button name="submit" type="button" (click)="onSubmit()">Submit</button>
+    </div>
+</div>
