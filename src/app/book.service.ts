@@ -12,7 +12,7 @@ import { catchError, map } from 'rxjs/operators';
 })
 export class BookService {
 
-  private bookUrl: string = "http://openlibrary.org/search.json?q=";
+  private bookUrl: string = "https://openlibrary.org/search.json?q=";
   
   book$: Book | any = null;
   bookList$: Book[] = [];
